@@ -38,18 +38,3 @@
   .tdLoss {
     color: #f91212;
   }
-  
-  .final {
-    padding: 8px 24px;
-    text-align: center;
-    color: white;
-  }
-  
-  .final a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .final a:hover {
-    text-decoration: underline;
-  }

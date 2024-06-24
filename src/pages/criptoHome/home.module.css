@@ -108,7 +108,17 @@
     align-items: center;
     text-decoration: none;
     color: white;
+  }
 
+  .group {
+    gap: 8px;
+    align-items: center;
+    color: white;
+  }
+  
+  .noUnderline {
+    text-decoration: none;
+    color: inherit;
   }
   
   @media screen and (max-width: 600px) {

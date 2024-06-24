@@ -5,8 +5,11 @@ export function Header() {
     return(
    <header className={styles.container}>
     <div>
-    <Link to="/"/>
-    <h1> Cabeçalho</h1>
+    <Link to="/" className={styles.noUnderline}>
+    <h1 className={styles.title}> Página inicial </h1>
+   
+    <h2> Criptomoedas</h2>
+    </Link>
     </div>
     </header>
     )

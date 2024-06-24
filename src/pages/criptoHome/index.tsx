@@ -92,18 +92,18 @@ export function CriptoHome() {
                 {coins.rank}
               </td>
               <td className={styles.tdLabel} data-label="Moeda">
-                <div className={styles.name}>
-                  <img
-                    className={styles.logo}
-                    alt="logo cripto"
-                    src={`https://assets.coincap.io/assets/icons/${coins.symbol.toLocaleLowerCase()}@2x.png`}
-                  />
-                  <Link to={`/criptoDetails/${coins.id}`}>
-                    <div className={styles.name}>
-                      <span> {coins.name} </span> |{coins.symbol}
-                    </div>
-                  </Link>
-                </div>
+              <div>
+  <img
+    className={styles.logo}
+    alt="logo cripto"
+    src={`https://assets.coincap.io/assets/icons/${coins.symbol.toLocaleLowerCase()}@2x.png`}
+  />
+  <Link to={`/criptoDetails/${coins.id}`} className={styles.noUnderline}>
+    <div className={styles.group}>
+      <span> {coins.name} </span> |{coins.symbol}
+    </div>
+  </Link>
+</div>
               </td>
               <td className={styles.tdLabel} data-label="Valor de mercado">
                 {" "}

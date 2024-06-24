@@ -110,11 +110,6 @@ export function CriptoDetails() {
         </p>
 
       </section>
-      <section className={styles.final}>
-  <a href="/">
-    Voltar à tela inicial
-  </a>
-</section>
     </div>
   );
 }
