@@ -1,13 +1,9 @@
-import styles from './notfound.module.css'
-import { Link } from 'react-router-dom'
- 
-export function Notfound() {
-    return(
-        <div className={styles.container}>
-            <h1> Página 404 não existe</h1>
-            <Link to='/'>
-            Acessar criptomoedas
-            </Link>
+import { Link } from "react-router-dom"
+export default function NotFound() {
+    return (
+        <div> 
+            <h1> Página não encontrada</h1>
+            <Link to="/"> Retornar ao menu inicial</Link>
         </div>
     )
 }

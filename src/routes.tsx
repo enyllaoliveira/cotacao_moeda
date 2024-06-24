@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
-import { Home } from './pages/home'
-import { Detail } from './pages/detail'
-import { Notfound } from "./pages/notfound";
+import { CriptoHome } from "./pages/criptoHome";
+import { CriptoDetails } from "./pages/criptoDetails";
+import NotFound from "./pages/notfound";
 
 import { Layout } from "./components/layout";
 
@@ -11,15 +11,15 @@ const router = createBrowserRouter([
         children:[
             {
                 path:'/',
-                element:<Home/>
+                element:<CriptoHome/>
             },
             {
-                path: "/detail/:cripto",
-                element: <Detail/>
+                path: "/criptoDetails/:id",
+                element: <CriptoDetails/>
             },
             {
                 path: "*",
-                element: <Notfound/>
+                element: <NotFound/>
             }
         ]
     }
